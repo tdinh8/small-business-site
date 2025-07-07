@@ -1,0 +1,110 @@
+/* Modern Family Diner Color Scheme */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #fffdf8; /* soft warm background */
+  color: #44322d; /* deep warm brown for text */
+}
+
+header {
+  background-color: #ba3b3b; /* soft tomato red */
+  color: #fffaf0;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #fffaf0;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffddaa; /* warm highlight */
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff1e6; /* creamy warm background */
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 240px;
+  border: 2px solid #ba3b3b;
+  border-radius: 6px;
+  background-color: #fffdf8;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 18px;
+  background-color: #795548; /* warm mocha brown */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #5d4037;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 20px;
+  background-color: #faf7f2;
+}
+
+.service {
+  flex: 1 1 30%;
+  margin: 15px;
+  padding: 25px;
+  background-color: #ffe8d1; /* light peach */
+  text-align: center;
+  border-radius: 12px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f1c9a7;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  background-color: #ffd6b3;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ba3b3b;
+  color: #fffaf0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    flex: 1 1 90%;
+  }
+
+  input {
+    width: 80%;
+  }
+}
